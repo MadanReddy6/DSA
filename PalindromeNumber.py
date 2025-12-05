@@ -8,3 +8,7 @@ def ispalindrome(x):
 print(ispalindrome(121))  # True
 print(ispalindrome(-121)) # False
 print(ispalindrome(10))   # False
+
+1
+2
+
