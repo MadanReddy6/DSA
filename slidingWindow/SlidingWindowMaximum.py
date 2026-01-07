@@ -44,6 +44,5 @@ def maxSlidingWindow(nums,k):
 
     return answer
 
-
 res = maxSlidingWindow([1,3,-1,-3,5,3,6,7] , 3)
 print(res)
