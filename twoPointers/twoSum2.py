@@ -35,6 +35,22 @@ def twoSumBinary(numbers, target):
             else:
                 right -= 1
             
+# optimal two pointer approach
+def twoSumTwoPointer(nums, target):
+    '''
+    time complexity: O(n)
+    space complexity: O(1)
+    '''
+    left = 0
+    right = len(nums)-1
+    while left < right:
+        if nums[left] + nums[right] == target:
+            return [left+1 , right+1]
+        elif nums[left] + nums[right] < target:
+            left += 1
+        else:
+            right -= 1
+    
 res=twoSumBinary([2,7,11,15],13)
 print(res) #[1,3]
 
